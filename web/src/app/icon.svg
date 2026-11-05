@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>EduCore School LMS</title>
+  <defs><linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#4338ca"/></linearGradient></defs>
+  <rect width="64" height="64" rx="16" fill="url(#brand)"/>
+  <g fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 23c-5-4-11-5-18-3v26c7-2 13-1 18 3 5-4 11-5 18-3V35"/>
+    <path d="M32 23v26M32 23c4-3 8-4 12-4"/>
+    <path d="M20 28c2 0 4 0 6 1M20 35c2 0 4 0 6 1" stroke-width="2.5" opacity=".8"/>
+  </g>
+  <path d="m39 28 5 5 9-11" fill="none" stroke="#a5f3fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
