@@ -1,0 +1,22 @@
+# Secrets and personal records
+.env
+.env.*
+*.env
+!.env.example
+!.env.local.example
+password.txt
+*credentials*.json
+*.pem
+*.key
+# Generated files and local uploads
+node_modules/
+.next/
+dist/
+.cache/
+uploads/
+coverage/
+*.log
+*.tsbuildinfo
+.vercel/
+.DS_Store
+Thumbs.db

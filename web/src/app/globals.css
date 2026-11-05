@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lms-calendar {
+  --rdp-accent-color: hsl(var(--primary));
+  --rdp-accent-background-color: hsl(var(--accent));
+  --rdp-today-color: hsl(var(--primary));
+  --rdp-day-height: 42px;
+  --rdp-day-width: 42px;
+  --rdp-day_button-height: 38px;
+  --rdp-day_button-width: 38px;
+  --rdp-day_button-border-radius: 10px;
+  --rdp-selected-border: 0;
+  --rdp-outside-opacity: 0.35;
+  --rdp-disabled-opacity: 0.25;
+  font-size: 0.875rem;
+}
+.lms-calendar .rdp-month_caption { font-size: 0.875rem; }
+.lms-calendar .rdp-dropdown_root { border-radius: 6px; padding: 4px; }
+.lms-calendar .rdp-dropdown_root:hover { background: hsl(var(--accent)); }
+.lms-calendar .rdp-dropdown { background: hsl(var(--card)); color: hsl(var(--foreground)); }
+.lms-calendar .rdp-weekday { font-size: 0.7rem; font-weight: 600; color: hsl(var(--muted-foreground)); }
+.lms-calendar .rdp-selected .rdp-day_button { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); font-weight: 700; }
+.lms-calendar .rdp-day_button:hover:not(:disabled) { background: hsl(var(--accent)); color: hsl(var(--accent-foreground)); }
+.lms-calendar .rdp-button_previous, .lms-calendar .rdp-button_next { border-radius: 8px; }
+.lms-calendar .rdp-button_previous:hover, .lms-calendar .rdp-button_next:hover { background: hsl(var(--accent)); }
+@media (max-width: 360px) {
+  .lms-calendar { --rdp-day-width: 36px; --rdp-day-height: 38px; --rdp-day_button-width: 34px; --rdp-day_button-height: 34px; }
+}
+
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  scroll-behavior: auto !important;
+  transition-duration: 0.01ms !important;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 243 75% 59%;
+    --primary-hover: 243 75% 51%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 25% 27%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 226 100% 97%;
+    --accent-foreground: 244 55% 41%;
+    --brand-secondary: 175 77% 26%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --danger-soft: 0 86% 95%;
+    --success: 142 71% 29%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 139 77% 93%;
+    --warning: 32 95% 37%;
+    --warning-foreground: 0 0% 100%;
+    --warning-soft: 48 97% 89%;
+    --info: 200 97% 32%;
+    --info-foreground: 0 0% 100%;
+    --info-soft: 204 94% 94%;
+    --border: 214 32% 91%;
+    --input: 213 27% 84%;
+    --ring: 243 75% 59%;
+    --radius: 0.5rem;
+
+    --chart-1: 243 75% 59%;
+    --chart-2: 175 77% 26%;
+    --chart-3: 32 95% 44%;
+    --chart-4: 347 77% 50%;
+    --chart-5: 199 89% 41%;
+    --chart-6: 263 70% 50%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 25% 27%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-accent: 226 100% 97%;
+    --sidebar-accent-foreground: 244 55% 41%;
+  }
+
+  .dark {
+    --background: 222 49% 8%;
+    --foreground: 210 40% 96%;
+    --card: 221 39% 11%;
+    --card-foreground: 210 40% 96%;
+    --popover: 221 39% 11%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 239 84% 74%;
+    --primary-hover: 238 79% 67%;
+    --primary-foreground: 222 49% 8%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 244 47% 20%;
+    --accent-foreground: 234 89% 85%;
+    --brand-secondary: 172 66% 50%;
+    --destructive: 0 91% 71%;
+    --destructive-foreground: 222 49% 8%;
+    --danger-soft: 0 73% 15%;
+    --success: 142 69% 58%;
+    --success-foreground: 222 49% 8%;
+    --success-soft: 143 64% 10%;
+    --warning: 43 96% 56%;
+    --warning-foreground: 222 49% 8%;
+    --warning-soft: 24 92% 14%;
+    --info: 198 93% 60%;
+    --info-foreground: 222 49% 8%;
+    --info-soft: 199 79% 16%;
+    --border: 216 30% 22%;
+    --input: 215 25% 27%;
+    --ring: 239 84% 74%;
+
+    --chart-1: 239 84% 74%;
+    --chart-2: 172 66% 50%;
+    --chart-3: 43 96% 56%;
+    --chart-4: 351 95% 71%;
+    --chart-5: 198 93% 60%;
+    --chart-6: 258 90% 76%;
+
+    --sidebar-background: 221 39% 11%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 239 84% 74%;
+    --sidebar-border: 216 30% 22%;
+    --sidebar-accent: 244 47% 20%;
+    --sidebar-accent-foreground: 234 89% 85%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .page-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .surface-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.45) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.45) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: linear-gradient(to bottom, black 10%, transparent 80%);
+  }
+
+  .skeleton-shimmer {
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--card)) 50%,
+      hsl(var(--muted)) 75%
+    );
+    background-size: 200% 100%;
+    @apply animate-shimmer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: white !important; }
+  aside,
+  header.sticky,
+  nav[aria-label="Mobile navigation"] { display: none !important; }
+  main { max-width: none !important; min-height: auto !important; padding: 0 !important; }
+  .lg\:ps-64,
+  .lg\:ps-\[72px\] { padding-inline-start: 0 !important; }
+  .print-page { width: 100%; max-width: none; box-shadow: none !important; }
+}

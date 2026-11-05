@@ -1,0 +1,28 @@
+# Assumes this apps folder is the GitHub repository root.
+services:
+  - type: web
+    name: educore-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci --include=dev --workspaces=false && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_CHAT_MODEL
+        value: openai/gpt-oss-20b
+      - key: AI_VECTOR_INDEX
+        value: course_content_local_v1
