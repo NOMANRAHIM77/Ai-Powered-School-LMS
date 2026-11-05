@@ -4,6 +4,46 @@ A school learning and administration application for **administrators, teachers,
 
 > Development project: core portal workflows are implemented. Some older generic reports, timetable and finance screens still contain demonstration data. This is not a certified production school system or a completed multi-tenant SaaS.
 
+## Product preview
+
+Browse the portals and AI tutor below. These screenshots use **synthetic demonstration data**, not private school records; AI answers and scores are illustrative. [View all feature screenshots](#screenshots).
+
+### Choose a portal
+
+![Choose a portal](docs/screenshots/role-selection.png)
+
+Image: [role-selection.png](docs/screenshots/role-selection.png)
+
+### Administrator dashboard
+
+![Administrator dashboard](docs/screenshots/admin-dashboard.png)
+
+Image: [admin-dashboard.png](docs/screenshots/admin-dashboard.png)
+
+### Student dashboard
+
+![Student dashboard](docs/screenshots/student-dashboard.png)
+
+Image: [student-dashboard.png](docs/screenshots/student-dashboard.png)
+
+### Teacher courses
+
+![Teacher courses](docs/screenshots/teacher-course-overview.png)
+
+Image: [teacher-course-overview.png](docs/screenshots/teacher-course-overview.png)
+
+### Parent dashboard
+
+![Parent dashboard](docs/screenshots/parent-dashboard.png)
+
+Image: [parent-dashboard.png](docs/screenshots/parent-dashboard.png)
+
+### AI tutor answers with source citations
+
+![AI tutor answers with source citations](docs/screenshots/rag-answer-citations.png)
+
+Image: [rag-answer-citations.png](docs/screenshots/rag-answer-citations.png)
+
 ## Portal flows
 
 | Portal | Workflow |
@@ -125,7 +165,237 @@ Follow [DEPLOYMENT.md](DEPLOYMENT.md) for environment values, build/start comman
 
 ## Screenshots
 
-See [the 59-image screenshot gallery](docs/screenshots/README.md) and [AI detail views](docs/screenshots/AI-DETAILS.md). Captures from public/design-system/demo pages are clearly marked; they are not proof of a live database or AI answer. No real credentials or student records are included.
+All 59 browser captures are embedded in this README: six in the [product preview](#product-preview) and the remaining feature screens below. Each image includes its filename. See also the [standalone gallery](docs/screenshots/README.md).
+
+Screenshots use synthetic data or built-in demo screens. They contain no real student records or credentials. AI responses and scores illustrate the interface; they are not live AI evaluations.
+
+### Login screens
+
+**Login admin** — [login-admin.png](docs/screenshots/login-admin.png)
+
+![login admin](docs/screenshots/login-admin.png)
+
+**Login parent** — [login-parent.png](docs/screenshots/login-parent.png)
+
+![login parent](docs/screenshots/login-parent.png)
+
+**Login student** — [login-student.png](docs/screenshots/login-student.png)
+
+![login student](docs/screenshots/login-student.png)
+
+**Login teacher** — [login-teacher.png](docs/screenshots/login-teacher.png)
+
+![login teacher](docs/screenshots/login-teacher.png)
+
+### Administrator portal
+
+**Admin Academic year** — [admin-Academic-year.png](docs/screenshots/admin-Academic-year.png)
+
+![admin Academic year](docs/screenshots/admin-Academic-year.png)
+
+**Admin Announcements** — [admin-Announcements.png](docs/screenshots/admin-Announcements.png)
+
+![admin Announcements](docs/screenshots/admin-Announcements.png)
+
+**Admin Complaints** — [admin-Complaints.png](docs/screenshots/admin-Complaints.png)
+
+![admin Complaints](docs/screenshots/admin-Complaints.png)
+
+**Admin Courses** — [admin-Courses.png](docs/screenshots/admin-Courses.png)
+
+![admin Courses](docs/screenshots/admin-Courses.png)
+
+**Admin Parent accounts** — [admin-Parent-accounts.png](docs/screenshots/admin-Parent-accounts.png)
+
+![admin Parent accounts](docs/screenshots/admin-Parent-accounts.png)
+
+**Admin Student accounts** — [admin-Student-accounts.png](docs/screenshots/admin-Student-accounts.png)
+
+![admin Student accounts](docs/screenshots/admin-Student-accounts.png)
+
+**Admin Teacher accounts** — [admin-Teacher-accounts.png](docs/screenshots/admin-Teacher-accounts.png)
+
+![admin Teacher accounts](docs/screenshots/admin-Teacher-accounts.png)
+
+### Student portal
+
+**Student Announcements** — [student-Announcements.png](docs/screenshots/student-Announcements.png)
+
+![student Announcements](docs/screenshots/student-Announcements.png)
+
+**Student Assignments** — [student-Assignments.png](docs/screenshots/student-Assignments.png)
+
+![student Assignments](docs/screenshots/student-Assignments.png)
+
+**Student Attendance** — [student-Attendance.png](docs/screenshots/student-Attendance.png)
+
+![student Attendance](docs/screenshots/student-Attendance.png)
+
+**Student Complaints** — [student-Complaints.png](docs/screenshots/student-Complaints.png)
+
+![student Complaints](docs/screenshots/student-Complaints.png)
+
+**Student course AI tutor** — [student-course-AI-tutor.png](docs/screenshots/student-course-AI-tutor.png)
+
+![student course AI tutor](docs/screenshots/student-course-AI-tutor.png)
+
+**Student course Assignments** — [student-course-Assignments.png](docs/screenshots/student-course-Assignments.png)
+
+![student course Assignments](docs/screenshots/student-course-Assignments.png)
+
+**Student course Course material** — [student-course-Course-material.png](docs/screenshots/student-course-Course-material.png)
+
+![student course Course material](docs/screenshots/student-course-Course-material.png)
+
+**Student course list** — [student-course-list.png](docs/screenshots/student-course-list.png)
+
+![student course list](docs/screenshots/student-course-list.png)
+
+**Student course My attendance** — [student-course-My-attendance.png](docs/screenshots/student-course-My-attendance.png)
+
+![student course My attendance](docs/screenshots/student-course-My-attendance.png)
+
+**Student course My marks** — [student-course-My-marks.png](docs/screenshots/student-course-My-marks.png)
+
+![student course My marks](docs/screenshots/student-course-My-marks.png)
+
+**Student course Personalized quiz** — [student-course-Personalized-quiz.png](docs/screenshots/student-course-Personalized-quiz.png)
+
+![student course Personalized quiz](docs/screenshots/student-course-Personalized-quiz.png)
+
+**Student course Quiz** — [student-course-Quiz.png](docs/screenshots/student-course-Quiz.png)
+
+![student course Quiz](docs/screenshots/student-course-Quiz.png)
+
+**Student My courses** — [student-My-courses.png](docs/screenshots/student-My-courses.png)
+
+![student My courses](docs/screenshots/student-My-courses.png)
+
+**Student photo navbar** — [student-photo-navbar.png](docs/screenshots/student-photo-navbar.png)
+
+![student photo navbar](docs/screenshots/student-photo-navbar.png)
+
+**Student Profile & settings** — [student-Profile-&-settings.png](docs/screenshots/student-Profile-%26-settings.png)
+
+![student Profile & settings](docs/screenshots/student-Profile-%26-settings.png)
+
+**Student profile photo** — [student-profile-photo.png](docs/screenshots/student-profile-photo.png)
+
+![student profile photo](docs/screenshots/student-profile-photo.png)
+
+### Teacher portal
+
+**Teacher AI tutor** — [teacher-AI-tutor.png](docs/screenshots/teacher-AI-tutor.png)
+
+![teacher AI tutor](docs/screenshots/teacher-AI-tutor.png)
+
+**Teacher Assign assignment** — [teacher-Assign-assignment.png](docs/screenshots/teacher-Assign-assignment.png)
+
+![teacher Assign assignment](docs/screenshots/teacher-Assign-assignment.png)
+
+**Teacher chat** — [teacher-chat.png](docs/screenshots/teacher-chat.png)
+
+![teacher chat](docs/screenshots/teacher-chat.png)
+
+**Teacher Course material** — [teacher-Course-material.png](docs/screenshots/teacher-Course-material.png)
+
+![teacher Course material](docs/screenshots/teacher-Course-material.png)
+
+**Teacher courses** — [teacher-courses.png](docs/screenshots/teacher-courses.png)
+
+![teacher courses](docs/screenshots/teacher-courses.png)
+
+**Teacher Grades** — [teacher-Grades.png](docs/screenshots/teacher-Grades.png)
+
+![teacher Grades](docs/screenshots/teacher-Grades.png)
+
+**Teacher profile** — [teacher-profile.png](docs/screenshots/teacher-profile.png)
+
+![teacher profile](docs/screenshots/teacher-profile.png)
+
+**Teacher Sessions attended** — [teacher-Sessions-attended.png](docs/screenshots/teacher-Sessions-attended.png)
+
+![teacher Sessions attended](docs/screenshots/teacher-Sessions-attended.png)
+
+**Teacher Students** — [teacher-Students.png](docs/screenshots/teacher-Students.png)
+
+![teacher Students](docs/screenshots/teacher-Students.png)
+
+**Teacher Take quiz** — [teacher-Take-quiz.png](docs/screenshots/teacher-Take-quiz.png)
+
+![teacher Take quiz](docs/screenshots/teacher-Take-quiz.png)
+
+### Parent portal
+
+**Parent announcements** — [parent-announcements.png](docs/screenshots/parent-announcements.png)
+
+![parent announcements](docs/screenshots/parent-announcements.png)
+
+**Parent chat** — [parent-chat.png](docs/screenshots/parent-chat.png)
+
+![parent chat](docs/screenshots/parent-chat.png)
+
+**Parent courses** — [parent-courses.png](docs/screenshots/parent-courses.png)
+
+![parent courses](docs/screenshots/parent-courses.png)
+
+### AI practice and grading
+
+**AI quiz review and approval** — [ai-quiz-review-and-approval.png](docs/screenshots/ai-quiz-review-and-approval.png)
+
+![AI quiz review and approval](docs/screenshots/ai-quiz-review-and-approval.png)
+
+**Flashcard study** — [flashcard-study.png](docs/screenshots/flashcard-study.png)
+
+![flashcard study](docs/screenshots/flashcard-study.png)
+
+**Personalized quiz attempt** — [personalized-quiz-attempt.png](docs/screenshots/personalized-quiz-attempt.png)
+
+![personalized quiz attempt](docs/screenshots/personalized-quiz-attempt.png)
+
+**Personalized quiz ready** — [personalized-quiz-ready.png](docs/screenshots/personalized-quiz-ready.png)
+
+![personalized quiz ready](docs/screenshots/personalized-quiz-ready.png)
+
+**Personalized quiz result** — [personalized-quiz-result.png](docs/screenshots/personalized-quiz-result.png)
+
+![personalized quiz result](docs/screenshots/personalized-quiz-result.png)
+
+### Calendar and time dialogs
+
+**Date picker dark** — [date-picker-dark.png](docs/screenshots/date-picker-dark.png)
+
+![date picker dark](docs/screenshots/date-picker-dark.png)
+
+**Date picker desktop** — [date-picker-desktop.png](docs/screenshots/date-picker-desktop.png)
+
+![date picker desktop](docs/screenshots/date-picker-desktop.png)
+
+**Date picker mobile** — [date-picker-mobile.png](docs/screenshots/date-picker-mobile.png)
+
+![date picker mobile](docs/screenshots/date-picker-mobile.png)
+
+### Design system and demonstration screens
+
+**Demo design system** — [demo-design-system.png](docs/screenshots/demo-design-system.png)
+
+![demo design system](docs/screenshots/demo-design-system.png)
+
+**Demo fees** — [demo-fees.png](docs/screenshots/demo-fees.png)
+
+![demo fees](docs/screenshots/demo-fees.png)
+
+**Demo marks** — [demo-marks.png](docs/screenshots/demo-marks.png)
+
+![demo marks](docs/screenshots/demo-marks.png)
+
+**Demo reports** — [demo-reports.png](docs/screenshots/demo-reports.png)
+
+![demo reports](docs/screenshots/demo-reports.png)
+
+**Demo timetable** — [demo-timetable.png](docs/screenshots/demo-timetable.png)
+
+![demo timetable](docs/screenshots/demo-timetable.png)
 
 ## Checks and limitations
 
